@@ -149,6 +149,10 @@ border-bottom: 1px dashed rgba(12,8,32,0.4);
 	padding: 2.8125rem 1.125rem 1.25rem;
 	text-align: center;
 }
+	.pricebox
+{
+	margin-top: 5%;
+}
 }
 
 
