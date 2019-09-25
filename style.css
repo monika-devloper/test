@@ -153,6 +153,12 @@ border-bottom: 1px dashed rgba(12,8,32,0.4);
 {
 	margin-top: 5%;
 }
+	@media screen and (max-device-width: 360px) 
+{
+.pricediv
+{
+margin: 0%; 
+}
 }
 
 
