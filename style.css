@@ -13,9 +13,11 @@ body{
 {  border-radius: 3px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  
+   align-items: flex-start;
   grid-column-gap: 8%;
-  text-align: center;
+  
   margin:20%;
   margin-top:0 !important;
   margin-bottom:0 !important;
@@ -119,6 +121,27 @@ border-bottom: 1px dashed rgba(12,8,32,0.4);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);
     color: black !important;
 }
+@media (max-width: 800px) {
+  .pricediv{
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .pricediv div:nth-child(2) {
+    -ms-grid-row: 2;
+    grid-row-start: 2;
+    
+  }
+  .pricediv> div {
+    -ms-flex-item-align: top;
+    -ms-grid-row-align: top;
+    align-self: top;
+
+  }
+  
+}
+
+
 
 
 
